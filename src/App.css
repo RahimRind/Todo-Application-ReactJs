@@ -1,18 +1,89 @@
 .App {
   text-align:center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
 }
+
+/* .btncss{
+  padding: 2px;
+  margin: 2px;
+  width: 30px;
+} */
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* background-color: #282c34; */
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(20px + 3vmin);
-  color: white;
+  /* color: white; */
+  margin-bottom: 20px;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: url('https://images.pexels.com/photos/5861190/pexels-photo-5861190.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover no-repeat;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 70%;
+  font-size: 16px;
+  border-radius: 2px;
   
 }
-.in1{
-  width: 20px;
-  background: #000;
+
+button {
+  background-color: #61dafb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #2180c0;
+}
+
+ol {
+  /* list-style-type: none; */
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: bisque;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+li button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+li button:hover {
+  background-color: #c82333;
 }

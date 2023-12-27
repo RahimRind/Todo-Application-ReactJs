@@ -21,10 +21,15 @@ function deleteText(index){
   const copylist =[...List]
   copylist.splice(index,1)
   setlist(copylist)
-
-
 }
- 
+
+
+function deleteAll(){
+  setlist([]);
+  setinputvalue("");
+} 
+
+
 function editText(index){
   const itemsValue = List[index]
   setinputvalue(itemsValue);
@@ -58,22 +63,24 @@ setinputvalue(value)
     <div className="App">
       <header className="App-header">
          <h1>Todo App</h1>
-         <input onChange={updata} placeholder='Enter Any text'
+         <input onChange={updata} placeholder='Enter Any text...'
          value={inputvalue} />
          {editType ? <button onClick={textUpdata}>Updata</button>
-:
-<button onClick={addtext}>Add</button>
-}
+         :
+         <button  onClick={addtext}>Add</button>
+            }
 
          <ol>
           {List.map(function(item, index ){
-            return <li>
+            return <li className={editType && currentIndex === index ? "editColor" : ''}>
               {item}
               <button onClick={()=> deleteText(index)}>Delete</button>
               <button onClick={()=> editText(index)}>Edit</button>
               </li>
           })}
          </ol>
+
+         <button id='deleteAll' onClick={deleteAll}>Delete All </button>
       </header>
     </div>
   );
