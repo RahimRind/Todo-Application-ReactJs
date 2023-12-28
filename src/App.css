@@ -20,15 +20,18 @@
   align-items: center;
   justify-content: center;
   font-size: calc(20px + 3vmin);
-  /* color: white; */
+    /* color: white; */
   margin-bottom: 20px;
 }
 
 
 body {
   margin: 0;
+  background-image:url('https://static.vecteezy.com/system/resources/thumbnails/008/137/400/small/to-do-list-text-on-notepad-pen-and-potted-plant-on-wooden-table-flat-lay-free-photo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   font-family: 'Arial', sans-serif;
-  background: url('https://images.pexels.com/photos/5861190/pexels-photo-5861190.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') center/cover no-repeat;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -42,6 +45,9 @@ input {
   font-size: 16px;
   border-radius: 2px;
   
+}
+.editColor{
+  background:yellow;
 }
 
 button {
@@ -59,8 +65,7 @@ button:hover {
   background-color: #2180c0;
 }
 
-ol {
-  /* list-style-type: none; */
+ol { 
   padding: 0;
 }
 

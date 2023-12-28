@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
 import { useState } from 'react';
 import './App.css';
 
@@ -62,14 +62,14 @@ setinputvalue(value)
   return (
     <div className="App">
       <header className="App-header">
-         <h1>Todo App</h1>
+        <h1><i>Todo App</i></h1>
          <input onChange={updata} placeholder='Enter Any text...'
          value={inputvalue} />
          {editType ? <button onClick={textUpdata}>Updata</button>
          :
-         <button  onClick={addtext}>Add</button>
+         <button  onClick={addtext}>Add Text</button>
             }
-
+        
          <ol>
           {List.map(function(item, index ){
             return <li className={editType && currentIndex === index ? "editColor" : ''}>
